@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Insights Markdown Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>📚 Library</h2>
+        <ul id="file-list">
+          <li data-file="./git-github/GitHub All License Intro.md">
+            📄 intro.md
+          </li>
+          <li data-file="docs/react-guide.md">📄 react-guide.md</li>
+          <li data-file="docs/backend.md">📄 backend.md</li>
+        </ul>
+      </aside>
+      <main class="content">
+        <div id="markdown-content">Select a file to preview</div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      const fileList = document.getElementById("file-list");
+      const content = document.getElementById("markdown-content");
+
+      fileList.addEventListener("click", async (e) => {
+        if (e.target && e.target.dataset.file) {
+          const file = e.target.dataset.file;
+          const response = await fetch(file);
+          const md = await response.text();
+          const html = marked.parse(md, {
+            highlight: function (code, lang) {
+              return hljs.highlightAuto(code).value;
+            },
+          });
+          content.innerHTML = html;
+        }
+      });
+    </script>
+  </body>
+</html>
