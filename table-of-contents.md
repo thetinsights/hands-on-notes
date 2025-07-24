@@ -1,18 +1,16 @@
-## Web
+## Web Design
 
-| SL  | Title                                                                                                                 | Last Updated |
-| --- | --------------------------------------------------------------------------------------------------------------------- | ------------ |
-| 1   | [HTML, CSS, JavaScript Project Folder Structure](./r/web/HTML,%20CSS,%20JavaScript%20Project%20Folder%20Structure.md) |              |
-| 2   |                                                                                                                       |              |
+| SL  | Title                 |
+| --- | --------------------- |
+| 01  | [[Hands on HTML5]]    |
+| 02  | [[HTML5 Cheat Sheet]] |
+## Web Backend
 
-## Cheat Sheets
+| SL  | Title                                              |
+| --- | -------------------------------------------------- |
+| 01  | [[HTML, CSS, JavaScript Project Folder Structure]] |
+## Tools
 
-| SL  | Title | Last Updated |
-| --- | ----- | ------------ |
-| 1   |       |              |
-
-## Git & GitHub
-
-| SL  | Title                                                                        | Last Updated |
-| --- | ---------------------------------------------------------------------------- | ------------ |
-| 1   | [GitHub All License Intro](./r/git-github/GitHub%20All%20License%20Intro.md) |              |
+| SL  | Title                        |
+| --- | ---------------------------- |
+| 01  | [[GitHub All License Intro]] |

@@ -53,7 +53,7 @@ If you'd like to contribute:
 - Add or improve a note
 - Submit a pull request
 
-📩 For suggestions, feel free to open an issue.
+📩 For suggestions, feel free to open an [issue](https://github.com/thetinsights/hands-on-notes/issues).
 
 ## Related Projects
 
